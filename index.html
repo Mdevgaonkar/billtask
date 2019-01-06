@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bill me task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form action="http://localhost:3000/incoming_bill" method="POST" enctype="multipart/form-data">
+        <br>
+        <label for="avatar">Bill File:</label>
+        <input type="file" id="bill_file" name="bill_file" accept="image/png, image/jpeg">
+        <br>
+        Vendor name<br>
+        <input type="text" name="vendor_name" value="Some Vendor">
+        <br>
+        Brand name:<br>
+        <input type="text" name="brand_name" value="Some Brand">
+        <br>
+        Bill Amt.<br>
+        <input type="number" name="bill_amt" value="200">
+        <br>
+        Bill Date<br>
+        <input type="date" name="bill_date" value="01-01-2019">
+        <br>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
